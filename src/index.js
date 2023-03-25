@@ -11,7 +11,7 @@ const countryList = document.querySelector('.country-list');
 const cleanMarkup = ref => (ref.innerHTML = '');
 
 const handleSearchCountyes = event => {
-  let searchCountry = event.target.value.trim();
+  let searchCountry = event.target.value.trim().toLowerCase();
 
   if (!searchCountry) {
     cleanMarkup(countryList);
